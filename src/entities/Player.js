@@ -23,7 +23,7 @@ export default class Player {
 
   init() {
     this.img = new Image();
-    this.img.src = "C:\Users\steve\code\canvas\space\public\images\spaceship.png";
+    this.img.src = "./images/spaceship.png";
     this.weapon = new Weapon(this.canvas, this.ctx);
 
     this.img.onload = () => {

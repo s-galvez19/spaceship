@@ -6,12 +6,12 @@ export default class Weapon {
     this.ctx = ctx;
 
     this.shooting = {};
-    this.ammo = 10;
+    this.ammo = 100;
   }
 
-  shoot(x, y) {
+  shoot(x, y, w, h) {
     if (this.ammo > 0) {
-      this.shooting[this.ammo] = new Rocket(this.canvas, this.ctx, x, y, this.ammo);
+      this.shooting[this.ammo] = new Rocket(this.canvas, this.ctx, x, y, w, h, this.ammo);
       this.ammo--;
     }
   }

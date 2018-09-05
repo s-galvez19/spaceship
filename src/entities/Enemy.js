@@ -23,7 +23,7 @@ export default class Enemy {
 
   init() {
     this.img = new Image();
-    this.img.src = "C:\Users\steve\code\canvas\space\public\images\enemy1.png";
+    this.img.src = "./images/enemy1.png";
     
     this.img.onload = () => {
       this.draw();
